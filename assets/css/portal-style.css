@@ -1,0 +1,110 @@
+/* General Portal Layout */
+.container-fluid {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.list-group-item {
+    border: none;
+    padding: 12px 20px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.list-group-item.active {
+    background-color: #198754; /* Success Green matching your Save button */
+    border-color: #198754;
+}
+
+.list-group-item:not(.active):hover {
+    background-color: #e9ecef;
+    color: #198754;
+}
+
+/* Card Enhancements */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+}
+
+/* DataTables UI Tweaks */
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter {
+    margin-bottom: 20px;
+}
+
+#sip-orders-table_filter input {
+    border-radius: 20px;
+    padding: 6px 15px;
+    border: 1px solid #ced4da;
+    outline: none;
+}
+
+#sip-orders-table_filter input:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+.table thead th {
+    background-color: #f1f3f5;
+    color: #495057;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    border-top: none;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-header {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Responsive Table */
+.table-responsive {
+    border-radius: 10px;
+}
+
+/* Custom Scrollbar for Textarea */
+#c_address {
+    resize: none;
+}
+
+/* Utility Classes */
+.me-2 { margin-right: 0.5rem !important; }
+.shadow-sm { box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; }
+
+
+.form-label.small {
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-bottom: 4px;
+    display: block;
+}
+
+#sip-clear-filters {
+    border-style: dashed; /* Makes the clear button look secondary */
+    font-size: 0.8rem;
+}
+
+#sip-clear-filters:hover {
+    background-color: #f8f9fa;
+    color: #dc3545; /* Turns red on hover to indicate "clearing" */
+    border-color: #dc3545;
+}
